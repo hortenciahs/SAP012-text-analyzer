@@ -6,8 +6,24 @@
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
+<header> 
+  <h1>Analizador de texto</h1>
+</header>
 <body>
   <script src="index.js" type="module"></script>
+  <textarea name="user-input" cols="50" rows="15"> 
+  </textarea>
+  <ul>
+    <li class="style1" data-testid="character-count">Caracteres</li>
+    <li class="style2" data-testid="character-no-spaces-count">Caracteres sem espaço</li>
+    <li class="style3" data-testid="word-count">Palavras</li>
+    <li class="style4" data-testid="number-count">Numeros</li>
+    <li class="style5" data-testid="number-sum">Soma dos numeros</li>
+    <li class="style6" data-testid="word-length-average">Comprimento médio de palavras</li>
+  </ul>
+  <button id="reset-button"> Limpar texto </button>
+  <br>
+  <br>
+  <footer><p>Hortencia Silva</p></footer>
 </body>
 </html>
