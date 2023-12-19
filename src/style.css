@@ -5,7 +5,9 @@ body {
     background-color:  #9a5071;
     }
 
-li {  
+
+
+li [class] {  
     display: inline-flex; 
     border-left-color: gray;
     border-right-color: gray;
@@ -22,15 +24,15 @@ li {
 }
   
 
-h1 {
+header {
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     border-radius: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-textarea {
+#user-input {
     border-width: 20px;
     border-top-color: black;
     border-bottom-color: #f1bbbb;
@@ -42,7 +44,7 @@ textarea {
     background-color: rgb(223, 196, 210);
 }
 
-button {
+#reset-button {
     cursor: cell;
     border-left-color: gray;
     border-right-color: gray;
@@ -54,4 +56,10 @@ button {
     border-radius: 80px;
     font-size: medium;
     background-color: rgb(223, 196, 210);
+}
+
+footer {
+    background-color: gray;
+    border-width: 5px;
+    border-radius: 20px;
 }
