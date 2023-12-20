@@ -1,25 +1,32 @@
 import analyzer from './analyzer.js';
-const input = document.querySelector("#user-input");
-const counter = document.querySelector(".counter");
-const togglebutton = document.querySelector("reset-button");
-var elemento = document.getElementById("character-count");
+let metricas = (text) => {
+const wordCount = analyzer.getWordCount(text);
+    const characterCount = analyzer.getCharacterCount(text);
+    const averageWordLength = analyzer.getAverageWordLength(text);
+    const numberCount = analyzer.getNumberCount(text);
+    const numberSum = analyzer.getNumberSum(text);
+    const characterCountExcludingSpaces = analyzer.getCharacterCountExcludingSpaces(text);
 
-let mode = "character-count";
 
-input.addEventListener("user-input"), () => {
-
-    let count = 0;
-    if(mode === "character-count") {
-
-        const count = input;
     
-        counter.textContent = `${count} character-count;`
+    document.querySelector('[data-testid="word-count"]').textContent = `Contagem de Palavras: ${wordCount}`;
+    document.querySelector('[data-testid="character-count"]').textContent = `Contagem de Caracteres: ${characterCount}`;
+    document.querySelector('[data-testid="character-no-spaces-count"]').textContent = `Contagem Sem Espaços/Pontuações: ${characterCountExcludingSpaces}`;
+    document.querySelector('[data-testid="number-count"]').textContent = `Contagem de Números: ${numberCount}`;
+    document.querySelector('[data-testid="number-sum"]').textContent = `Soma Total dos Números: ${numberSum}`;
+    document.querySelector('[data-testid="word-length-average"]').textContent = `Comprimento Médio das Palavras: ${averageWordLength.toFixed(2)}`;
 
-           
-    }
 
-    else {
+};
 
-    }
-}
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+let textarea = document.querySelector('textarea[name="user-input"]');
+textarea.addEventListener('input', () => {
+    const text = textarea.value;
+    metricas(text);
+});
+
+let button = document.getElementById('reset-button');
+button.addEventListener('click', () => {
+    textarea.value = '';
+    metricas('');
+});

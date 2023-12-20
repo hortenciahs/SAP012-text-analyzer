@@ -9,17 +9,22 @@ const analyzer = {
 
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const cleantext = text.replace(/[^\w\s]/g, "");
-    for (let i = 0; i < characters.length; i++)
+    const cleantext = text.replace(/[^\w\s]/g, "").replace (/\s+/g, '');
+    let nospacecount = 0;
+    for (let i = 0; i < cleantext.length; i++) {
+      if (cleantext[i] !== '') {
+        nospacecount++;
+      } 
+    }
     return cleantext.length;
-    
+
 
   },
-  getAverageWordLength: (text) => {   
-    let totalLength = 0; 
-    const words = getWords(text);
-    if(words.length === 0)
-    return 0;
+  getAverageWordLength: (text) => {    
+    const words = text.trim().split(/\s+/).filter(Boolean);
+    if(words.length === 0){
+      return 0;
+    }
     const totalwordlength = words.reduce(( acc,words) => acc + words.length, 0);
     return totalwordlength / words.length 
     
@@ -30,8 +35,8 @@ const analyzer = {
     return numbers ? numbers.length : 0;
   },
   getNumberSum: (text) => {
-   const numbers = text.match(/\d+/g);
-   return numbers ? numbers.reduce((acc,num) => acc + parseInt(num), 0) : 0;
+    const numbers = text.match(/\d+/g);
+    numbers ? numbers.reduce((acc,num) => acc + parseInt(num), 0) : 0;
   },
 };
 

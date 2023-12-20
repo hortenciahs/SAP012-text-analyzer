@@ -6,8 +6,10 @@ body {
     }
 
 
+    
 
-li [class] {  
+
+.estilo {  
     display: inline-flex; 
     border-left-color: gray;
     border-right-color: gray;
@@ -32,7 +34,7 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#user-input {
+textarea [name="#user-input"] {
     border-width: 20px;
     border-top-color: black;
     border-bottom-color: #f1bbbb;
@@ -62,4 +64,7 @@ footer {
     background-color: gray;
     border-width: 5px;
     border-radius: 20px;
+}
+ul li{
+    list-style-type: none;
 }
