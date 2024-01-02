@@ -28,13 +28,15 @@ body {
 
 header {
     color: rgb(0, 0, 0);
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     border-radius: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-textarea [name="#user-input"] {
+textarea[name="user-input"] {
+
+    padding: auto;
     border-width: 20px;
     border-top-color: black;
     border-bottom-color: #f1bbbb;
@@ -43,8 +45,9 @@ textarea [name="#user-input"] {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(223, 196, 210);
+
 }
+
 
 #reset-button {
     cursor: cell;
