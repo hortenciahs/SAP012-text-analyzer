@@ -614,15 +614,6 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
   * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manipulação de eventos de DOM (listeners, propagação, delegação)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
 
 - [ ] **Manipulação dinâmica de DOM**
 
@@ -653,98 +644,9 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
   * [String — Cadeia de caracteres - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String)
 </p></details>
 
-- [ ] **Variáveis (declaração, atribuição, escopo)**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/basics/values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/basics/variables)
-</p></details>
-
-- [ ] **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de laços (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Funções (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/functions/classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/functions/arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
 - [ ] **Testes unitários (unit tests)**
 
   <details><summary>Links</summary><p>
 
   * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
 </p></details>
-
-- [ ] **Módulos de ECMAScript (ES modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura e Semântica)**
-
-### Controle de Versões (Git e GitHub)
-
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
-
-### Centrado no usuário
-
-- [ ] **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
-
-### Design de produto
-
-- [ ] **Design em diferentes níveis de fidelidade**
-
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-## 11. Funcionalidades opcionais
-
-Se você terminou com todas as [funcionalidades requeridas](#4-funcionalidades),
-tente implementar as seguintes funcionalidades opcionais para aprofundar nos
-objetivos de aprendizado do projeto:
-
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
-texto vazia.
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
-texto contendo apenas espaços.
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
-texto contendo apenas caracteres de pontuação.
-
-Você pode habilitar os testes unitários e _end-to-end_ para esses casos nos
-arquivos [test/analyzer.spec.js](test/analyzer.spec.js) e
-[read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
-Você também precisará ajustar os testes existentes para as funcionalidades requeridas.
