@@ -56,7 +56,9 @@ Você realizará isso usando HTML, CSS e JavaScript.
 
 ## 4. Funcionalidades
 
-A lista de funcionalidades é a seguinte:
+A lista de funcionalidades é a seguinte: 
+![image](https://github.com/hortenciahs/SAP012-text-analyzer/assets/143658225/0000f971-5912-4c97-962d-f5286bc80ec7)
+
 
 1. A aplicação deve permitir que a usuária insira um texto escrevendo-o
     em uma caixa de texto.
